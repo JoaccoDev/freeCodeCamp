@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freeCodeCamp - Survey form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Welcome to <em>El Clan</em></h1>
+        <p id="description">Give us feedback about your experience eating in our restaurant!</p>
+    </header>
+    <main>
+        <form action="#" id="survey-form">
+            <h2>Complete the form</h2>
+            <div class="form_div">
+                <label for="name" id="name-label">Enter your name.</label>
+                <input type="text" name="name" id="name" placeholder="Full name..." required>
+            </div>
+            <div class="form_div">
+                <label for="email" id="email-label">Enter your email.</label>
+                <input type="email" name="email" id="email" placeholder="Email..." required>
+            </div>
+            <div class="form_div">
+                <label for="age" id="number-label">Enter your age.</label>
+                <input type="number" name="age" id="number" min="18" max="119" placeholder="Age in numbers..." required>
+            </div>
+            <div class="form_div">
+                <p>Select your gender.</p>
+                <label><input type="radio" value="male" name="gender" class="radio">Male</label>
+                <label><input type="radio" value="female" name="gender" class="radio">Female</label>
+                <label><input type="radio" value="none" name="gender" class="radio" checked>Prefer not to say</label>
+            </div>
+            <div class="form_div">
+                <p>Select your country.</p>
+                <select name="dropdown" id="dropdown" required>
+                    <option value="USA">United States</option>
+                    <option value="Esp">Spain</option>
+                    <option value="Arg">Argentina</option>
+                    <option value="SK">South Korea</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form_div">
+                <p>What's the best of our service? <em>(optional).</em></p>
+                <label><input type="checkbox" name="worst" class="checkbox" value="food">Food.</label>
+                <label><input type="checkbox" name="best" class="checkbox" value="attention">Attention.</label>
+                <label><input type="checkbox" name="best" class="checkbox" value="decoration">Decoration.</label>
+            </div>
+            <div class="form_div">
+                <p>What can we improve in our service? <em>(optional).</em></p>
+                <label><input type="checkbox" name="worst" class="checkbox" value="food">Food.</label>
+                <label><input type="checkbox" name="worst" class="checkbox" value="attention">Attention.</label>
+                <label><input type="checkbox" name="worst" class="checkbox" value="decoration">Decoration.</label>
+            </div>
+            <div class="form_div">
+                <p>Comments/suggestions <em>(optional).</em></p>
+                <textarea name="extra" id="textarea" rows="4"></textarea>
+            </div>
+            <div class="form_div">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <h3>El Clan © All rights reserved - 2022</h3>
+    </footer>
+</body>
+</html>
