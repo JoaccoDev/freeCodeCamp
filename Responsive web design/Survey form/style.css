@@ -91,3 +91,6 @@ footer {
 footer h3 {
     padding: 0.8rem;
 }
+footer h3 a {
+    text-decoration: none;
+}

@@ -50,6 +50,9 @@ blockquote {
     margin: 0 auto 50px auto;
     text-align: left;
 }
+footer h3 a {
+    text-decoration: none;
+}
 
 @media (max-width: 460px) {
     h1 {
