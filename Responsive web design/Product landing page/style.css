@@ -2,7 +2,7 @@
 :root {
     --bg-navbar: rgb(27, 27, 27);
     --color-logo: rgb(238, 167, 62);
-    --general-color: blanchedalmond;
+    --general-color: white;
 }
 
 /* ==== Reset ==== */
@@ -12,19 +12,29 @@
     box-sizing: border-box;
     background-color: rgb(7, 5, 22);
     color: var(--general-color);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* ==== Header ==== */
-.logo {
+#header-img {
+    width: 60px;
+    line-height: 60px;
+    padding-left: 30px;
+    background-color: var(--bg-navbar);
+}
+.text-logo {
     font-size: 35px;
     line-height: 60px;
-    padding: 0 0 0 30px;
+    padding-left: 10px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--bg-navbar);
     color: var(--color-logo);
 }
 nav {
+    position: fixed;
+    z-index: 5;
+    margin-top: -80px;
     background-color: var(--bg-navbar);
     width: 100%;
     height: 60px;
@@ -53,30 +63,90 @@ li a:hover {
     transition-duration: 0.35s;
 }
 
-/* General classes */
+/* ==== General tags, classes and ids ==== */
 .title {
     font-size: 3.2rem;
     margin-bottom: 17px;
+    position: relative;
+}
+.title:after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 25%;
+    background: var(--color-logo);
+    margin: 0 auto;
+    bottom: -1px;
+	left: 0;
+    right: 0;
 }
 .subtitle {
+    position: relative;
     font-size: 2rem;
+    margin-bottom: 10px;
+}
+.subtitle:after{
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 8%;
+    background: var(--color-logo);
+    margin: 0 auto;
+    bottom: -0.5px;
+	left: 0;
+    right: 0;
 }
 h3 {
     font-size: 1.4rem;
+    font-style: italic;
+}
+img {
+    width: 150px;
 }
 
 /* ==== Home ==== */
 #home {
     width: 100%;
     margin: 80px auto;
+    padding-top: 80px;
     text-align: center;
 }
 
 /* ==== Products ==== */
-
+#products {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 80px;
+    text-align: center;
+}
+#products h3 {
+    display: block;
+}
+.products-container {
+    width: 80%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 1.6rem;
+    row-gap: 3.2rem;
+}
+.products-item {
+    font-size: 14px;
+}
+.products-item p {
+    font-size: 10px;
+    margin-bottom: 17px;
+}
 
 /* ==== About ==== */
-
+#about {
+    width: 100%;
+    min-height: 500px;
+    margin: 0 auto;
+    padding-top: 80px;
+    text-align: center;
+}
 
 /* ==== Footer ==== */
 
