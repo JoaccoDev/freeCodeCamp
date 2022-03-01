@@ -10,9 +10,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
     background-color: rgb(7, 5, 22);
     color: var(--general-color);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* ==== Header ==== */
@@ -20,7 +22,6 @@
     width: 60px;
     line-height: 60px;
     padding-left: 30px;
-    background-color: var(--bg-navbar);
 }
 .text-logo {
     font-size: 35px;
@@ -28,7 +29,6 @@
     padding-left: 10px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--bg-navbar);
     color: var(--color-logo);
 }
 nav {
@@ -40,23 +40,21 @@ nav {
     height: 60px;
 }
 ul {
-    background-color: var(--bg-navbar);
     float: right;
     margin-right: 30px;
 }
 li {
-    background-color: var(--bg-navbar);
     display: inline-block;
     list-style: none;
     line-height: 60px;
     margin: 0 5px;
 }
 li a {
-    background-color: var(--bg-navbar);
     text-decoration: none;
     font-size: 17px;
     text-transform: capitalize;
     margin: 5px;
+    color: var(--general-color);
 }
 li a:hover {
     color: var(--color-logo);
@@ -167,6 +165,16 @@ img {
     font-size: 10px;
     margin-bottom: 12px;
 }
+.products-item button {
+    padding: 3px 22px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--bg-navbar);
+    transition: all ease 0.5s;
+}
+.products-item button:hover {
+    transform: scale(1.1);
+}
 @media screen and (min-width:617px) and (max-width: 1048px) {
     .products-container {
         grid-template-columns: repeat(3, 1fr);
@@ -212,4 +220,38 @@ img {
     line-height: 18px;
     font-weight: normal;
 }
+
 /* ==== Footer ==== */
+footer {
+    padding: 1.2rem;
+    text-align: center;
+    background-color: rgb(27, 27, 27);
+}
+.newsletter {
+    margin: 1.2rem;
+}
+.newsletter h3 {
+    font-size: 1.8rem;
+}
+input[type=email] {
+    margin: 1.2rem 0 10px 10px;
+    padding: 3px 35px 0 4px;
+}
+button[type=submit] {
+    padding: 3px 22px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--color-logo);
+    transition: all ease 0.5s;
+}
+button[type=submit]:hover {
+    transform: scale(1.1);
+}
+.copyright h3 {
+    font-size: 18px;
+    color: var(--general-color);
+}
+.copyright h3 a {
+    text-decoration: none;
+    color: var(--color-logo);
+}
