@@ -6,28 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>freeCodeCamp - Personal portfolio</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./js/nav.js" defer></script>
 </head>
 <body>
-    <header>
+    <header class="primary-header">
+        <div>
+            <img class="logo" src="https://cdn-icons.flaticon.com/png/512/3242/premium/3242257.png?token=exp=1646529548~hmac=975b28927adc645f8fd4deef890a1e99" alt="Logo">
+        </div>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+        </button>
         <nav id="navbar">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul data-visible="false" class="primary-navigation">
+                <li>
+                    <a href="#home">
+                        <span aria-hidden="true">01</span>Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#about">
+                        <span aria-hidden="true">02</span>About
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects">
+                        <span aria-hidden="true">03</span>Projects
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <span aria-hidden="true">04</span>Contact
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="welcome-section">
-            <span class="ws_span1">Hi! I am</span>
-            <h1>Joaquin Godoy</h1>
-            <span class="ws_span2">Front-end developer.</span>
+        <section id="home">
+            <div class="home-container">
+                <p class="home-p1">Hi, I'm</p>
+                <h1 class="title">Joaquin Godoy.</h1>
+                <p class="home-p2">Web developer.</p>
+                <img class="illustration" src="./assets/illustration.svg" alt="Developer in action">
+            </div>
         </section>
         <section id="about">
-            <h2>I'll make your dream come true.</h2>
+            <h2 class="subtitle">I'll make your dream come true</h2>
             <p>I'm a passionate web developer that can make your idea of a perfect website become reality. I have mastered the skills of HTML, CSS and JavaScript just to make your life easier.<br>I'll do everything for you so you don't have to worry!</p>
-            <p>What will I get having my own website?<br>In today's world, if you want to grow your company, you have to be into the internet. This way, you will have:</p>
+            <p><q>What will I get having my own website?</q><br>In today's world, if you want to grow your company, you have to be into the internet. This way, you will have:</p>
             <ul>
                 <li>More clients.</li>
                 <li>Major reach.</li>
@@ -37,13 +63,36 @@
             <p>Being honest, getting your own website is the best decision you can take in 2022.</p>
         </section>
         <section id="projects">
-            <h2>Check out some of my recent projects.</h2>
+            <h2 class="subtitle">Check out some of my recent projects</h2>
+            <div class="projects-container">
+                <div class="card card-1">
+                    <div class="card-content">
+                        <h3 class="card-title">Project one</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui repudiandae quo ex impedit.</p>
+                        <a href="#projects" class="card-btn">Learn more</a>
+                    </div>
+                </div>
+                <div class="card card-2">
+                    <div class="card-content">
+                        <h3 class="card-title">Project two</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui repudiandae quo ex impedit.</p>
+                        <a href="#projects" class="card-btn">Learn more</a>
+                    </div>
+                </div>
+                <div class="card card-3">
+                    <div class="card-content">
+                        <h3 class="card-title">Project three</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui repudiandae quo ex impedit.</p>
+                        <a href="#projects" class="card-btn">Learn more</a>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="contact"></section>
+        <section id="contact">
+            <h2 class="subtitle">¡Let's work together!</h2>
+        </section>
     </main>
     <footer>
-        <h2>Let's talk about your idea!</h2>
-        <span>Contact me through one of the following...</span>
         <p><a href="https://twitter.com/JoaccoDev">Twitter</a></p>
         <p><a href="https://github.com/JoaccoDev">GitHub</a></p>
         <p><a href="https://linkedin.com/in/joaquin--godoy">LinkedIn</a></p>
